@@ -1,0 +1,16 @@
+{
+  "name": "@so/di",
+  "version": "1.0.0",
+  "description": "",
+  "main": "di.js",
+  "typings": "di.d.ts",
+  "files": [
+    "di.js",
+    "di.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

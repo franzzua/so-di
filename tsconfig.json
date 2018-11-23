@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+//    "experimentalDecorators": true,
+//    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "commonjs",
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2015"
+    ]
+  }
+}
