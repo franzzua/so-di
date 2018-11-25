@@ -1,10 +1,15 @@
-import {ClassProvider, FactoryProvider, Provider, register, ValueProvider} from "./decorators";
+import {ClassProvider, FactoryProvider, Provider, ValueProvider} from "./types";
 import {Store} from "./store";
 
 export type CommonProvider = ValueProvider & ClassProvider & FactoryProvider;
 
 
 export class Container {
+    constructor() {
+        this.store.register({provide: Container, useValue: this});
+    }
+
+
     private store = new Store();
 
     public get<T>(target): T {
@@ -28,7 +33,7 @@ export class Container {
             provider.useClass = provider.provide;
         }
         if (provider.useClass) {
-            if (!provider.deps){
+            if (!provider.deps) {
 // console.warn('no deps in provider', provider.provide, provider.useClass);
                 provider.deps = [];
             }

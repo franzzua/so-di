@@ -2,11 +2,10 @@
   "name": "@so/di",
   "version": "1.0.0",
   "description": "",
-  "main": "di.js",
-  "typings": "di.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/typings/index.d.ts",
   "files": [
-    "di.js",
-    "di.d.ts"
+    "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

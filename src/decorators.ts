@@ -11,16 +11,9 @@ export function Injectable({deps, multiple}: {deps?: any[], multiple?} = {deps: 
     };
 }
 
-
 export function Inject() {
     return (target, propery, index) => {
 
     };
 }
 
-export class InjectionToken {
-    constructor(private name) {
-
-    }
-
-}

@@ -1,4 +1,4 @@
-import {Provider} from "./decorators";
+import {Provider} from "./types";
 
 export class Store {
     private providers: Provider[] = [];
@@ -9,6 +9,6 @@ export class Store {
     }
 
     find(type) {
-        return this.providers.filter(p => p.provide == p).pop();
+        return this.providers.filter(p => p.provide == type).pop();
     }
 }

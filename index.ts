@@ -1,2 +1,3 @@
-export {Container} from "./container";
-export * from "./decorators";
+export {Container} from "./src/container";
+
+export * from "./src/decorators";
