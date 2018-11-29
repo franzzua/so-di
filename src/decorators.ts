@@ -1,12 +1,13 @@
+import {GlobalStore} from "./store";
 
 export function Injectable({deps, multiple}: {deps?: any[], multiple?} = {deps: [], multiple: false}) {
     return target => {
-        // register({
-        //     provide: target,
-        //     useClass: target,
-        //     deps: deps,
-        //     multiple: multiple
-        // });
+        GlobalStore.register({
+            provide: target,
+            useClass: target,
+            deps: deps,
+            multiple: multiple
+        });
         return target;
     };
 }
